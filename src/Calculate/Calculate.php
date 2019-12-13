@@ -7,21 +7,21 @@ use CConverter\Cache\CacheFile;
 class Calculate implements CalculateInterface
 {
 	/**
-     * @var contains fixer.io api key string
-     */
+         * @var contains fixer.io api key string
+         */
 	protected $api_key;
 	
 	/**
-     * @const contains fixer.io API URL
-     */
+         * @const contains fixer.io API URL
+         */
 	const API_URL = "http://data.fixer.io/api/latest";
 	
 	/**
-     * get api key
-     *
-     * @param  string $key
-     * @return bool
-     */
+         * get api key
+         *
+         * @param  string $key
+         * @return bool
+         */
 	public function __construct($key)
 	{
 		$this->api_key = $key;
@@ -30,12 +30,12 @@ class Calculate implements CalculateInterface
 	}
 	
 	/**
-     * change or not float decimals
-     *
-     * @param  float $calc
+         * change or not float decimals
+         *
+         * @param  float $calc
 	 * @param  int   $short
-     * @return float
-     */
+         * @return float
+         */
 	public static function roundValue($calc, $short)
 	{
 		if($short){ $number = 2; }else{ $number = 5; }
@@ -45,16 +45,16 @@ class Calculate implements CalculateInterface
 	}
 	
 	/**
-     * currency conversion, cache check and fixer.io api connection
-     *
-     * @param  string|array   $getFrom
+         * currency conversion, cache check and fixer.io api connection
+         *
+         * @param  string|array   $getFrom
 	 * @param  string|array   $getTo
 	 * @param  float          $amount
 	 * @param  int            $short
 	 * @param  bool 		  $isCache
 	 * @param  int   		  $cacheTime
-     * @return string|array
-     */
+         * @return string|array
+         */
 	public function getValues($getFrom, $getTo, $amount, $short, $isCache, $cacheTime)
 	{
 		if($isCache && CacheFile::isCacheDir()){
@@ -118,11 +118,11 @@ class Calculate implements CalculateInterface
 	
 	/**
 	 * validate errors in conncection with fixer.io api
-     *
+         *
 	 * @param  string|array	 $data
-     * @return bool
+         * @return bool
 	 * @throws Exception\InvalidArgumentException
-     */
+         */
 	public function validateErrors($data)
 	{
 		if(!$data->success){
