@@ -118,8 +118,8 @@ or download .zip for create vendor file.
 * Relaible Rates with fixer.io API
 * Over 160 currencies
 * Support for gold, silver and bitcoin exchange rates
-* Caching of rate, to avoid connecting to fixer.io multiple times
-* Conversion without currency code by country short code
+* Caching of rate to avoid connecting to fixer.io multiple times
+* Conversion without currency code by country short name (US, DE, PL, GB...)
 * Conversion of many currencies with one API reference
 
 ## Authors
