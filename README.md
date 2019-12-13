@@ -5,10 +5,9 @@ PHP global currency converter using fixer.io API (include bitcoin, silver and go
 
 ## Getting Started
 
-```php
-
 Register at fixer.io to download your free api key and replace with YOUR_API_KEY.
 
+```php
 <?php
 	
 	require __DIR__ .'/vendor/autoload.php';
