@@ -6,9 +6,9 @@ class CacheFile
 {
 	/**
 	 * check if is cache dir
-     *
-     * @return bool
-     */
+         *
+         * @return bool
+         */
 	public static function isCacheDir()
 	{
 		if(!is_dir(__DIR__ .'/cache/')) mkdir(__DIR__ ."/cache/", 0700);
@@ -18,9 +18,9 @@ class CacheFile
 	
 	/**
 	 * check if cache file exists
-     *
-     * @return bool
-     */
+         *
+         * @return bool
+         */
 	public static function isFile()
 	{
 		$files = glob(__DIR__ .'/cache/*.txt');
@@ -36,9 +36,9 @@ class CacheFile
 	
 	/**
 	 *  get name of cache file
-     *
-     * @return string
-     */
+         *
+         * @return string
+         */
 	public static function getFileName()
 	{
 		$files = glob(__DIR__ .'/cache/*.txt');
@@ -51,9 +51,9 @@ class CacheFile
 	
 	/**
 	 *  check if cache file is needed to update
-     *
-     * @return bool
-     */
+         *
+         * @return bool
+         */
 	public static function isCurrent($file)
 	{
 		$getSourceName = explode(".", $file);
@@ -71,12 +71,12 @@ class CacheFile
 	
 	/**
 	 *  create new cache file
-     *
+         *
 	 * @param  string        $file
 	 * @param  array         $data
 	 * @param  int           $time
-     * @return bool
-     */
+         * @return bool
+         */
 	public static function setNewCacheFile($file, $data, $time)
 	{
 		if($file) unlink(__DIR__ .'/cache/'.$file);
@@ -92,9 +92,9 @@ class CacheFile
 	
 	/**
 	 *  get cache data
-     *
-     * @return array
-     */
+         *
+         * @return array
+         */
 	public static function getCache($file)
 	{
 		$data = file_get_contents(__DIR__ .'/cache/'.$file);
