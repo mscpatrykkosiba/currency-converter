@@ -108,13 +108,7 @@ You can combine the examples shown above.
 ## Installation
 
 This library depends on composer for installation . For installation of composer, please visit [getcomposer.org](//getcomposer.org).
-Installation using a composer:
-
-```
-composer require PatrykKosiba/currency-converter
-```
-
-or download .zip for create vendor file.
+You can download .zip for compile composer.json file to create vendor directory.
 
 ## Why Use It
 
