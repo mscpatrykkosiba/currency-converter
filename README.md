@@ -1,6 +1,9 @@
 currency-converter-php
 ======================
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/PatrykKosiba/currency-converter/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/PatrykKosiba/currency-converter/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/PatrykKosiba/currency-converter/badges/build.png?b=master)](https://scrutinizer-ci.com/g/PatrykKosiba/currency-converter/build-status/master)
+
 PHP global currency converter using fixer.io API (include bitcoin, silver and gold).
 
 ## Getting Started
