@@ -1,0 +1,32 @@
+{
+	"name": "patrykkosiba/ccconverter",
+    "description": "PHP global currency converter using fixer.io API (include bitcoin, silver and gold)",
+    "license": "MIT",
+    "keywords": [
+		"api",
+		"bitcoin",
+		"btc",
+        "currency",
+		"currencyconverter",
+        "currency-converter",
+        "converter",
+		"country",
+        "exchange-rates",
+		"fixer",
+		"gold",
+		"money",
+		"silver"
+    ],
+    "autoload": {
+        "psr-4": { "CConverter\\": "src/" }
+    },
+	"authors": [
+        {
+            "name": "mgr inż. Patryk Kosiba",
+            "email": "patryk.kosiba@gmail.com"
+        }
+    ],
+	"require": {
+        "php": ">=5.5"
+    }
+}
