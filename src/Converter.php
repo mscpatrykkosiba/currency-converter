@@ -8,37 +8,37 @@ use CConverter\Cache\Cache;
 class Converter implements ConverterInterface
 {
 	/**
-     * @var contains fixer.io api key string
-     */
+         * @var contains fixer.io api key string
+         */
 	protected $api_key;
 	
 	/**
 	 * sortage api key lenght 
 	 *
-     * @var int
-     */
+         * @var int
+         */
 	public $api_length = 32;
 	
 	/**
 	 * sortage cache or not 
-	 *
-     * @var bool
-     */
+ 	 *
+         * @var bool
+         */
 	public $isCache = false;
 	
 	/**
 	 * contains storage cache in minutes
 	 *
-     * @var int
-     */
+         * @var int
+         */
 	public $cacheTime = 60;
 	
 	/**
-     * connect with API fixer.io
-     *
-     * @param  string $api_key
-     * @return bool
-     */
+         * connect with API fixer.io
+         *
+         * @param  string $api_key
+         * @return bool
+         */
 	public function __construct($api_key)
 	{
 		if(strlen($api_key)==$this->api_length){
@@ -52,13 +52,13 @@ class Converter implements ConverterInterface
 	
 	/**
 	 * initial currency conversion
-     *
-     * @param  string|array $from
+         *
+         * @param  string|array $from
 	 * @param  string|array $to
 	 * @param  float 		$amount
 	 * @param  bool			$short
-     * @return string|array
-     */
+         * @return string|array
+         */
 	public function cconv($from, $to, $amount = 1, $short = false)
 	{
 		$getFrom = $this->checkInput($from);
@@ -73,10 +73,10 @@ class Converter implements ConverterInterface
 	
 	/**
 	 * validate input data
-     *
+         *
 	 * @param  string $data
-     * @return bool
-     */
+         * @return bool
+         */
 	public function validateInput($data)
 	{
 		if(strlen($data)==2 || strlen($data)==3){
@@ -89,11 +89,11 @@ class Converter implements ConverterInterface
 	
 	/**
 	 * initial cache or not
-     *
+         *
 	 * @param  bool	 $is
 	 * @param  int	 $time
-     * @return bool
-     */
+         * @return bool
+         */
 	public function cache($is = false, $time = 60)
 	{
 		$parm = Cache::setCache($is, $time);
@@ -105,11 +105,11 @@ class Converter implements ConverterInterface
 	
 	/**
 	 * check input data for validator
-     *
+         *
 	 * @param  string|array	 $data
-     * @return string|array
+         * @return string|array
 	 * @throws Exception\InvalidArgumentException
-     */
+         */
 	protected function checkInput($data)
 	{
 		if(is_string($data)){
