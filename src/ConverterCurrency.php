@@ -7,8 +7,8 @@ class ConverterCurrency
 	/**
 	 * country code and currency code contains gold, silver and bitcoin currency
 	 *
-     * @var array
-     */
+         * @var array
+         */
 	protected static $countrys = array(
         'AED' => 'AE',
 		'AFN' => 'AF',
@@ -182,10 +182,10 @@ class ConverterCurrency
 	
 	/**
 	 * check currency code and transform country code to currency code
-     *
+         *
 	 * @param  string|array	 $data
-     * @return string|array|bool
-     */
+         * @return string|array|bool
+         */
 	public static function getCurrency($data)
 	{
 		$base = array_flip(self::$countrys);
