@@ -5,6 +5,8 @@ PHP global currency converter using fixer.io API (include bitcoin, silver and go
 
 ## Getting Started
 
+Register at fixer.io to download your free api key and replace with YOUR_API_KEY.
+
 ```php
 <?php
 	
@@ -86,6 +88,7 @@ PHP global currency converter using fixer.io API (include bitcoin, silver and go
 ## Requirements
 
 * PHP version 5.5 or later
+* Fixer.io free account 
 
 ## Usage
 
@@ -105,22 +108,21 @@ You can combine the examples shown above.
 ## Installation
 
 This library depends on composer for installation . For installation of composer, please visit [getcomposer.org](//getcomposer.org).
-Installation using a composer:
-
-```
-composer require PatrykKosiba/currency-converter
-```
-
-or download .zip for create vendor file.
+You can download .zip for compile composer.json file to create vendor directory.
 
 ## Why Use It
 
 * Relaible Rates with fixer.io API
 * Over 160 currencies
 * Support for gold, silver and bitcoin exchange rates
-* Caching of rate, to avoid connecting to fixer.io multiple times
-* Conversion without currency code by country short code
+* Caching of rate to avoid connecting to fixer.io multiple times
+* Conversion without currency code by country short name (US, DE, PL, GB...)
 * Conversion of many currencies with one API reference
+
+## Informations
+
+A free account at fixer.io allows you to connect to the API 1000 times a month and information about currencies is provided once an hour. To use currency conversions efficiently, use the cache option.
+Setting the cache for 60 minutes allows for efficient use of services without restrictions on access to the API for any amount of time.
 
 ## Authors
 
