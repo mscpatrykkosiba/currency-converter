@@ -6,10 +6,10 @@ interface CacheInterface
 {
 	/**
 	 * change cache parameter
-     *
-     * @param  bool $is
+         *
+         * @param  bool $is
 	 * @param  int  $time
-     * @return bool
-     */
+         * @return bool
+         */
 	public static function setCache($is, $time);
 }
