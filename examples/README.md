@@ -98,7 +98,7 @@ You can combine the examples shown above.
 	require __DIR__ .'/vendor/autoload.php';
 	
 	$value = new CConverter\Converter('YOUR_API_KEY');
-	$array = $value->cconv(array('DE','EUR', 'USD', 10.20304, 3);
+	$array = $value->cconv(array('DE','EUR'), 'USD', 10.20304, 3);
 	
 ```
 
