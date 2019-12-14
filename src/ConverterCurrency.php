@@ -194,7 +194,7 @@ class ConverterCurrency
 				foreach($base as $key => $value){
 					if($key==$data) $output = $value;
 				}
-				if(!$output) $output = false;
+				if(empty($output)) $output = false;
 			}else{
 				$output = false;
 			}
@@ -202,7 +202,7 @@ class ConverterCurrency
 			foreach($base as $key => $value){
 				if($value==$data) $output = $value;
 			}
-			if(!$output) $output = false;
+			if(empty($output)) $output = false;
 		}else{
 			$output = false;
 		}
