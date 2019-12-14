@@ -73,7 +73,7 @@ class CacheFile
 	 *  create new cache file
          *
 	 * @param  string        $file
-	 * @param  array         $data
+	 * @param  array|string  $data
 	 * @param  int           $time
          * @return bool
          */
