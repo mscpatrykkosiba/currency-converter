@@ -183,7 +183,7 @@ class ConverterCurrency
 	/**
 	 * check currency code and transform country code to currency code
          *
-	 * @param  string|array	 $data
+	 * @param  string             $data
          * @return string|array|bool
          */
 	public static function getCurrency($data)
@@ -194,6 +194,7 @@ class ConverterCurrency
 				foreach($base as $key => $value){
 					if($key==$data) $output = $value;
 				}
+				if(!$output) $output = false;
 			}else{
 				$output = false;
 			}
@@ -203,7 +204,7 @@ class ConverterCurrency
 			}
 			if(!$output) $output = false;
 		}else{
-			$outut = false;
+			$output = false;
 		}
 		return $output;
 	}
