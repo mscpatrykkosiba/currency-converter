@@ -93,7 +93,7 @@ class CacheFile
 	/**
 	 *  get cache data
          *
-         * @return array
+         * @return string
          */
 	public static function getCache($file)
 	{
