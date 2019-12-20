@@ -112,7 +112,10 @@ class Calculate implements CalculateInterface
 
                 $output = Calculate::roundValue(($amount * $getB)/$getA, $short);
             }
+        }else{
+            $output = false;
         }
+        
         return $output;
     }
 
