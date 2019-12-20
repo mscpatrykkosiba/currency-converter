@@ -1,5 +1,5 @@
 {
-    "name": "PatrykKosiba/currency-converter",
+    "name": "patrykkosiba/currency-converter",
     "description": "PHP global currency converter using fixer.io API (include bitcoin, silver and gold)",
     "license": "MIT",
     "keywords": [
