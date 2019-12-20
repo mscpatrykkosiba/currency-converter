@@ -114,12 +114,12 @@ class Converter implements ConverterInterface
     {
         if(is_string($data)){
             $value = $this->validateInput($data);
-            if($value==false) throw new Exception\InvalidArgumentException('Invalid data. Please enter a valid country or currency name');
+            if($value===false) throw new Exception\InvalidArgumentException('Invalid data. Please enter a valid country or currency name');
         }else if(is_array($data)){
             $value = array();
             foreach($data as $single){
                 $opt = $this->validateInput($single);
-                if($opt==false) throw new Exception\InvalidArgumentException('Invalid data. Please enter array with a valid country or currency names');
+                if($opt===false) throw new Exception\InvalidArgumentException('Invalid data. Please enter array with a valid country or currency names');
                 array_push($value, $opt);
             }
         }else{
